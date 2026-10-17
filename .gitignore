@@ -1,0 +1,4 @@
+research-agents/backend/.venv
+research-agents/backend/.env
+research-agents/backend/.env.example
+research-agents/backend/__pycache__

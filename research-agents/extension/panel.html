@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verified Research Agents</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <main>
+    <h1>Ask, then check the sources</h1>
+    <textarea id="q" rows="3" placeholder="e.g. Who won the most recent men's FIFA World Cup?"></textarea>
+    <button id="go">Research this</button>
+
+    <ol class="pipeline" id="pipeline" hidden>
+      <li data-agent="Retriever">Retriever</li>
+      <li data-agent="Synthesizer">Synthesizer</li>
+      <li data-agent="Fact-Checker">Fact-Checker</li>
+    </ol>
+
+    <section id="answer-card" hidden>
+      <div id="badge" class="badge"></div>
+      <div id="answer"></div>
+      <h2>Sources</h2>
+      <ul id="sources"></ul>
+    </section>
+
+    <p id="error" class="error" hidden></p>
+
+    <details id="trace-wrap" hidden open>
+      <summary>Agent activity</summary>
+      <ul id="trace"></ul>
+    </details>
+  </main>
+  <script src="panel.js"></script>
+</body>
+</html>

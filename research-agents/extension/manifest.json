@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Verified Research Agents",
+  "version": "0.1.0",
+  "description": "Ask a question. Retriever, Synthesizer and Fact-Checker agents answer it from live web sources.",
+  "action": { "default_title": "Open research panel" },
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "panel.html" },
+  "permissions": ["sidePanel"],
+  "host_permissions": ["http://localhost:8000/*"]
+}
